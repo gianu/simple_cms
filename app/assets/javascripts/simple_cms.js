@@ -1,8 +1,10 @@
 function show_simple_cms_controls(obj) {
-  obj.addClassName('over_simple_cms');
+  //obj.addClassName('over_simple_cms');
+  obj.addClass('over_simple_cms');
 }
 function hide_simple_cms_controls(obj) {
-  obj.removeClassName('over_simple_cms');
+  //obj.removeClassName('over_simple_cms');
+  obj.removeClass('over_simple_cms');
 }
 function edit_simple_cms_item(simple_cms_item_id, prefix) {
   var base = document.location.href;
