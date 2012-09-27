@@ -1,5 +1,7 @@
 class SimpleCmsItem < ActiveRecord::Base
-  acts_as_versioned
+  acts_as_versioned :table_name => :simple_cms_item_versions
+
+  attr_accessible :params, :created_by, :updated_by
 
   def label
     h = YAML.load(params)
