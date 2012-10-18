@@ -1,4 +1,9 @@
 <% -%>
+<% if @cms_admin %>
+  <span <%= "onclick=edit_simple_cms_item(#{simple_cms_item.id},'#{@prefix}')" %>> 
+    <div class="cmsedit">Rediger</div> 
+  </span>
+<% end %>
 <div class="simple_cms_item<%= "_admin" if @cms_admin %>"
     <%= "onmouseover=show_simple_cms_controls($(this))" if @cms_admin %>
     <%= "onmouseout=hide_simple_cms_controls($(this))" if @cms_admin %>>

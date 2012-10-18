@@ -10,7 +10,7 @@ class SimpleCmsItemsController < ApplicationController
   skip_before_filter :verify_authenticity_token
   #before_filter :authenticate
   require 'coderay'
-  #layout 'plugin'
+  layout 'plugin'
 	def edit
 		@simple_cms_item = SimpleCmsItem.find(params[:id])
     referer = session[:cms_data][@simple_cms_item.params][:referer]
