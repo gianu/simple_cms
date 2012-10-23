@@ -5,7 +5,7 @@
     - Revision <div id="version_id" style="display: inline"><%= @simple_cms_item.version %></div>
   </div>
   </h3>
-  <%= text_area :simple_cms_item, :data, {:class => "mceEditor"} %>
+  <%= text_area :simple_cms_item, :data, {:class => "tinymce"} %>
 	<br/>
 	<%= submit_tag "Save Content", :style => "float:left;" %>
   <%= button_to "Cancel", {}, :name => 'commit', :style => "float:left;",

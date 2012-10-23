@@ -3,10 +3,11 @@
 	<head>
 		<%= stylesheet_link_tag "simple_cms", "coderay" %>
     <%= javascript_include_tag "simple_cms" %>
-    <%= javascript_include_tag "tiny_mce/tiny_mce", "tiny_mce_init" %>
+    <%= tinymce_assets %>
     <title>Note Editing</title>
 	</head>
 	<body class="simplecmsbody">
-		<%= yield %>
+    <%= yield %>
+    <%= tinymce %>
 	</body>
 </html>

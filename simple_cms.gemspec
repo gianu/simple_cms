@@ -19,4 +19,5 @@ Gem::Specification.new do |gem|
   #We are using a custom acts_as_versioned gem
   #gem.add_dependency "acts_as_versioned"
   gem.add_dependency "coderay"
+  gem.add_dependency "tinymce-rails"
 end
