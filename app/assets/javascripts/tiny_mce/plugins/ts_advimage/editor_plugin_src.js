@@ -6,7 +6,7 @@
  */
 
 /* Import plugin specific language pack */
-tinyMCE.importPluginLanguagePack('ts_advimage');
+tinymce.PluginManager.requireLangPack('ts_advimage');
 
 var TinyMCE_AdvancedImagePlugin = {
 	getInfo : function() {

@@ -1,5 +1,5 @@
 /* Import plugin specific language pack */
-tinyMCE.importPluginLanguagePack('insertcode');
+tinymce.PluginManager.requireLangPack('insertcode');
 
 // InsertCode Plugin
 var TinyMCE_InsertCodePlugin = {

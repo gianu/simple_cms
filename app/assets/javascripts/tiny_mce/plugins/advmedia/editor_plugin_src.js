@@ -6,7 +6,7 @@
  */
 
 /* Import plugin specific language pack */
-tinyMCE.importPluginLanguagePack('advmedia');
+tinymce.PluginManager.requireLangPack('advmedia');
 
 var TinyMCE_AdvancedMediaPlugin = {
 	getInfo : function() {

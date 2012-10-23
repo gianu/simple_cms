@@ -6,7 +6,7 @@
  */
 
 /* Import plugin specific language pack */
-tinyMCE.importPluginLanguagePack('flash');
+tinymce.PluginManager.requireLangPack('flash');
 
 var TinyMCE_FlashPlugin = {
 	getInfo : function() {

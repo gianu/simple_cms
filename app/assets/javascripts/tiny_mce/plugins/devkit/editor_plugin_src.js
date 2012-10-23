@@ -5,7 +5,7 @@
  * @copyright Copyright © 2004-2007, Moxiecode Systems AB, All rights reserved.
  */
 
-tinyMCE.importPluginLanguagePack('devkit');
+tinymce.PluginManager.requireLangPack('devkit');
 
 var TinyMCE_DevKitPlugin = {
 	_logFilter : '\\[(importCSS|execCommand|execInstanceCommand|debug)\\]',

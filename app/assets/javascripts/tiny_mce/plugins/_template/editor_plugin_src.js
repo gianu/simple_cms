@@ -6,7 +6,7 @@
  */
 
 /* Import plugin specific language pack */
-tinyMCE.importPluginLanguagePack('template');
+tinymce.PluginManager.requireLangPack('template');
 
 /****
  * Steps for creating a plugin from this template:
